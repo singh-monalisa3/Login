@@ -1,0 +1,28 @@
+.container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+ 
+
+  
+  .error-message {
+    color: yellow;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  
+
+  .welcome-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
