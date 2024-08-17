@@ -20,7 +20,7 @@ function LoginPage() {
 
     if (isLoggedIn) {
         return (
-            <div>
+            <div className="welcome-container">
                 <h1>Login Page</h1>
                 <p>{message}</p>
             </div>
@@ -31,6 +31,7 @@ function LoginPage() {
         <div>
             <h1>Login Page</h1>
             <form onSubmit={handleSubmit}>
+                {message && <p className="error-message">{message}</p>}
                 <div>
                     <label>Username:</label>
                     <input
@@ -53,7 +54,6 @@ function LoginPage() {
                 </div>
                 <button type="submit">Submit</button>
             </form>
-            {message && <p className="warning">{message}</p>}
         </div>
     );
 }
